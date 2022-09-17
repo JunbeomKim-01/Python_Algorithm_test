@@ -10,11 +10,14 @@ def solve10(N,L,A):
             D.pop()
         D.append([int(val),int(index)])
         #인덱스 제거
-        if D[0][1] <= int(index) - int(L):
+        if D[0][1] <= int(index) - L:
             D.popleft()
-        print(D[0][0], end= " ")
+        print(D[0][0], end=" ")
 
-if __name__ == '__main__':
-    N,L = map(str,input().split())
-    A = list(map(str,input().split()))
-    solve10(N,L,A)
+
+data = "12 3\n1 5 2 3 6 2 3 7 3 5 2 6"
+N,L = map(int,data.split('\n')[0].split(" "))
+A = data.split('\n')[1]
+
+
+solve10(N,L,A)
