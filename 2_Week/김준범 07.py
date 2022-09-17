@@ -28,11 +28,11 @@ def p_7(N,M,array):
     array_sroted = quick_sort(array)
 
     while start_index < end_index:
-        if array_sroted[start_index] + array_sroted[end_index] == int(M) :
+        if array_sroted[start_index] + array_sroted[end_index] == int(M):
             result += 1
             start_index +=1
             end_index -= 1
-        elif array_sroted[start_index] + array_sroted[end_index] < int(M) :
+        elif array_sroted[start_index] + array_sroted[end_index] < int(M):
             start_index +=1
         else:
             end_index -= 1
