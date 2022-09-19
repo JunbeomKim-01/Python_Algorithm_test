@@ -1,4 +1,10 @@
-def solve12():
+def solve12(N,A):
+    print(N)
+    print(A)
+
     pass
 if __name__ == '__main__':
-    solve12()
+    N = int(input())
+    A = list(map(int,input().split()))
+
+    solve12(N,A)
