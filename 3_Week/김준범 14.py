@@ -12,5 +12,6 @@ def solve14(N):
         else:
             heapq.heappush(heap, (abs(x), x))
 
-N = 18
-solve14(N)
+if __name__ == '__main__':
+    N = int(input())
+    solve14(N)

@@ -21,6 +21,6 @@ def solve11(N):
             print(i)
 
 
-N = 8
-
-solve11(N)
+if __name__ == '__main__':
+    N = int(input())
+    solve11(N)

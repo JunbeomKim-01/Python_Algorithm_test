@@ -7,5 +7,6 @@ def solve13(N):
         D.append(move_num)
     print(D[0])
 
-N = 6
-solve13(N)
+if __name__ == '__main__':
+    N = int(input())
+    solve13(N)
