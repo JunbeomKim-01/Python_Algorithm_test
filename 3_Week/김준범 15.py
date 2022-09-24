@@ -17,9 +17,11 @@ def solve15(N):
             else:
                 equal_arr.append(num)
         return sort(lesser_arr) + equal_arr + sort(greater_arr)
+
     arr = sort(arr)
     for i in arr:
         print(i)
+
 if __name__ == '__main__':
     N= int(input())
     solve15(N)

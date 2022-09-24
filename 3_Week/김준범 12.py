@@ -1,17 +1,14 @@
+from collections import deque
 def solve12(N,A):
-    stack = []
-    for i in range(N-1):
-        n = i+1
-        while n < N:
-            if A[i] < A[n]:
-                stack.append(A[i+1])
-                break
-            elif i == N:
-                stack.append(-1)
-                break
-            n += 1
-    stack.append(-1)
-    print(stack)
+    stack = deque()
+    ls = [-1] * N
+
+    for i in range(N):
+        while stack and (stack[-1][0] < A[i]):
+            tmp, index = stack.pop()
+            ls[index] = A[i]
+        stack.append([A[i], i])
+    print(*ls)# 공백기준 원소만 나열
 
 if __name__ == '__main__':
     N = int(input())

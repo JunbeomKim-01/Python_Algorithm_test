@@ -20,7 +20,6 @@ def solve11(N):
         for i in result:
             print(i)
 
-
 if __name__ == '__main__':
     N = int(input())
     solve11(N)
