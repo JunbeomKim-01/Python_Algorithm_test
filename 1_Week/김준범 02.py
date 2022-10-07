@@ -5,7 +5,6 @@ def p_2(index,test):
         _points.append(int(score) / max_score * 100)  # 새로운 값을 계산하여 리스트에 추가
     _avg = sum(_points) / int(index)  # 평균 계산
     print(_avg)
-    pass
 
 if __name__ == '__main__':
     index = input()  # 과목 수
