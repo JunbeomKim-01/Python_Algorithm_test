@@ -3,7 +3,6 @@ def solve15(N):
     for _ in range(N):
         A = int(input())
         arr.append(A)
-
     def sort(_arr):
         if len(_arr) <= 1:
             return _arr

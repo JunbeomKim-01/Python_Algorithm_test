@@ -8,6 +8,7 @@ def solve08(N,A):
         leftSide = [x for x in tail if x <= pivot]
         rightSide = [x for x in tail if x > pivot]
         return quick_sort(leftSide) + [pivot] + quick_sort(rightSide)
+    6
     sorted_array = quick_sort(A)
     for i in range(N):
         target = sorted_array[i]

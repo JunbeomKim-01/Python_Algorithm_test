@@ -15,6 +15,7 @@ def solve07(N,M,array):
             else:
                 equal_arr.append(num)
         return quick_sort(lesser_arr) + equal_arr + quick_sort(greater_arr)
+
     array_sroted = quick_sort(array)
     while start_index < end_index:
         if array_sroted[start_index] + array_sroted[end_index] == M:
